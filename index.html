@@ -9,15 +9,30 @@
   <body>
     <header>
       <a href="#">LOGO</a>
-      <nav>
+      <nav id="nav-menu">
         <ul>
-          <li>Sobre Mí</li>
-          <li>Portfolio</li>
-          <li>Contacto</li>
+          <li><a href="#">Sobre Mí</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
       </nav>
+      <button class="btn-abrir" id="btn-abrir" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path fill="#ffffff" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+        </svg>
+      </button>
+      
+      <button class="btn-cerrar" id="btn-cerrar" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
     </header>
     <main></main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
