@@ -15,3 +15,20 @@ btnCerrar.addEventListener("click", () => {
   btnAbrir.style.display = "block";
   btnCerrar.style.display = "none";
 });
+
+const ajustarMenu = () => {
+  if (window.innerWidth > 798) {
+    navMenu.style.display = "flex";
+    navMenu.style.opacity = "1";
+    btnAbrir.style.display = "none";
+    btnCerrar.style.display = "none";
+  } else {
+    navMenu.style.transition = "0s";
+    navMenu.style.opacity = "0";
+    btnAbrir.style.display = "block";
+    btnCerrar.style.display = "none";
+  }
+};
+
+window.addEventListener("resize", ajustarMenu);
+window.addEventListener("load", ajustarMenu);
